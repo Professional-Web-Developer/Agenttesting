@@ -219,7 +219,7 @@ Selvi runs a mess in Madurai that uses about one cylinder a day.
 - **Agnisumukh** (Bangalore): about 500 commercial kitchens, high-end clients ([Better India](https://thebetterindia.com/106424/agnisumukh-energy-efficient-stoves-hari-rao-it-officer/)). It sells hardware and doesn't benchmark or measure savings for a ₹3-lakh-a-month mess.
 - **Burner and stove makers and dealers** ([IndiaMART Madurai](https://dir.indiamart.com/madurai/single-burner-gas-stove.html), [The Hotel Mart](https://www.tradeindia.com/products/triple-burner-gas-stove-3686531.html)) sell products with unverified claims.
 - **LPG companies' advice pages** ([SuperGas](https://www.supergas.com/for-hotel/advice-on-saving-energy)) and **restaurant-software blogs** offer generic tips, with no measurement and no accountability.
-- **Why the gap exists:** until 2026 gas was 3–5% of revenue ([DineCard](https://www.dinecard.in/blog/restaurant-lpg-cylinder-consumption-calculator-india)) and not worth attention. The **cost rose by roughly half, with a physical shortage**, within the last 7 months, so a service built around measured savings is new.
+- **Why the gap exists:** until 2026 gas was 3–5% of revenue ([DineCard](https://www.dinecard.in/blog/restaurant-lpg-cylinder-consumption-calculator-india)) and not worth attention. Since April 2026 the price has risen about 30% (₹2,246.50 → ₹2,916.50), on top of an earlier ₹302.50 rise this year and a physical shortage in March. Before that, measured savings weren't worth selling.
 
 ### Biggest reason it could fail
 **Savings may be too small or too noisy to prove.** If real kitchens save only 5–8%, or daily sales swings hide the effect, owners will dispute the share and stop paying. Also, if the Gulf supply situation eases and prices fall back, urgency fades. And one bad technician visit involving gas is a **safety and reputation risk**.
@@ -334,7 +334,7 @@ Ravi runs a 20-machine stitching and cutting job-work unit in Tiruppur's outskir
 3. **Timing risk:**
    - Ideas 1 and 2 ride 2025–26 shocks: the coconut shortage and the Gulf LPG disruption.
    - Level 2 should stress-test what happens if shell prices halve or LPG falls back to early-2026 levels.
-   - Idea 1 still pays at ₹15/kg delivered only if collection costs stay under about ₹3/kg (assumption).
+   - If the delivered shell price halves to about ₹15/kg, Idea 1 works only if collection plus transport stays under about ₹3/kg and eateries accept about ₹8–10/kg (assumption).
 4. **Facts to verify before any go decision** (I ran out of search budget):
    - how many coconuts eateries use a day;
    - what TN eateries do with their shells today;
