@@ -18,6 +18,8 @@ Date: 2026-09-28. Repo: /home/user/Agenttesting (branch `claude/novel-problem-so
 | F5 | **Practical for this founder.** A solo developer can build an MVP in 2–4 weeks for under ₹50k, validate it in about 2 weeks, and see a clear revenue model. | "Don't give me a nonsense idea" |
 | F6 | **Cheap to market.** Customers can be reached via WhatsApp, Instagram/YouTube reels in Tamil, or local word of mouth. | The founder also wants the marketing done |
 
+| F7 | **Not "information people can already get", and a payer who definitely pays.** The value must be something tangible: **money in hand**, a completed transaction, or a service people can't easily do themselves. An idea that only tells people a number they could work out, or learn from YouTube, news or asking around, fails. Revenue that depends on sellers *voluntarily* paying referral fees, which are hard to track because the customer can walk in directly, is weak. | Added 29 Sep after the founder rejected Sedharam Check: "people can already check the real gold price in the news and many sites, so we don't need this site." The founder is partly wrong (the tool was about shop premiums, not the rate), but the underlying point is right: information-only tools with voluntary seller-paid referrals are weak |
+
 ## Already rejected or already existing (do NOT propose these again)
 - Work history for domestic workers built from UPI payments (fails F1). SERV'D tried a version and shut down.
 - Paid construction-stage inspections for families building their own house (fails F2).

@@ -6,6 +6,8 @@ Each is scored 1–5. A score of **3 or less on any gate eliminates the candidat
 - **F2 Saves money:** no new cost for the person who benefits.
 - **F3 No gatekeepers or lanjam:** the person who benefits is the only decision-maker, with no official, office or committee involved.
 
+- **F7 Tangible value and a sure payer** (added 29 Sep): delivers money in hand or a completed service, not just information people could get themselves, and has a payer who is sure to pay without relying on voluntary, untrackable referral fees.
+
 ## Step 2: weighted score (survivors only)
 | Criterion | Weight | What a 5 looks like |
 |---|---|---|
