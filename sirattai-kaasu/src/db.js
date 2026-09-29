@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS surveys (
   coconuts_per_day REAL,
   shells_go_to TEXT NOT NULL,
   current_price_per_kg REAL,
+  expected_price_per_kg REAL,
   willing_to_sign INTEGER NOT NULL DEFAULT 0,
   notes TEXT NOT NULL DEFAULT '',
   created_at TEXT NOT NULL DEFAULT (datetime('now'))
@@ -88,7 +89,14 @@ export function openDb(path) {
   const db = new DatabaseSync(path);
   db.exec('PRAGMA foreign_keys = ON;');
   db.exec(SCHEMA);
+  migrate(db);
   return new Store(db);
+}
+
+// Add columns introduced after the first release to older database files.
+function migrate(db) {
+  const surveyCols = db.prepare('PRAGMA table_info(surveys)').all().map((c) => c.name);
+  if (!surveyCols.includes('expected_price_per_kg')) db.exec('ALTER TABLE surveys ADD COLUMN expected_price_per_kg REAL');
 }
 
 class Store {
@@ -175,8 +183,10 @@ class Store {
   addSurvey(s) {
     return Number(
       this.db
-        .prepare('INSERT INTO surveys (eatery_name, area, coconuts_per_day, shells_go_to, current_price_per_kg, willing_to_sign, notes) VALUES (?, ?, ?, ?, ?, ?, ?)')
-        .run(s.eatery_name, s.area, s.coconuts_per_day, s.shells_go_to, s.current_price_per_kg, s.willing_to_sign ? 1 : 0, s.notes).lastInsertRowid,
+        .prepare(
+          'INSERT INTO surveys (eatery_name, area, coconuts_per_day, shells_go_to, current_price_per_kg, expected_price_per_kg, willing_to_sign, notes) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+        )
+        .run(s.eatery_name, s.area, s.coconuts_per_day, s.shells_go_to, s.current_price_per_kg, s.expected_price_per_kg, s.willing_to_sign ? 1 : 0, s.notes).lastInsertRowid,
     );
   }
 

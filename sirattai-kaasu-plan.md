@@ -76,11 +76,11 @@
 | Days | Do this | The app page to use |
 |---|---|---|
 | **30 Sep – 1 Oct** | Pick **one town 60–200 km from Pollachi–Kangeyam** but outside the coconut belt (Karur, Dindigul, Madurai, Trichy, Erode town, Salem). Buy the scale and sacks. Phone 6 shell buyers from the IndiaMART Pollachi and Coimbatore listings | **Buyers** (record every quote) |
-| **1 – 7 Oct** | **Survey 50 eateries** (script in the launch kit): coconuts per day, where the shells go now, the price they get today. Sign up the willing ones with a fixed pickup day | **Survey**, **Eateries** |
-| **Every Monday** | Update the buyer price and publish the new fair rate | **Rate** |
-| **8 – 14 Oct** | **Two pickup rounds** with a hired goods auto. Weigh in front of the owner and share the receipt | **Route sheet**, **Weigh-in** |
-| **About 14 Oct** | Deliver the first lot, weigh it on the buyer's scale, get paid | **Lots** |
-| **15 Oct: decision day** | Open **Validation** and follow it | **Validation** |
+| **1 – 6 Oct** | **Survey 50 eateries** (script in the launch kit, §3.3). Record coconuts per day, where the shells go now, the price they get today, and the price they *expect*; ask that before mentioning our rate. Sign up the willing ones with a fixed pickup day | **Survey**, **Eateries** |
+| **Mon 5 Oct, then every Monday** | Enter the buyer's **written** delivered quote and publish the fair rate. **No written quote means no rate and no pickup** | **Buyers**, **Rate** |
+| **Wed 7 Oct** | **Pickup round 1** with a hired goods auto. Weigh in front of the owner and share the receipt | **Route sheet**, **Weigh-in** |
+| **Wed 14 Oct** | **Pickup round 2**, then deliver the lot, weigh it on the buyer's scale and get paid | **Weigh-in**, **Lots** |
+| **Thu 15 Oct: decision day** | Open **Validation** and follow it. The launch kit (§3.5) proposes a one-week extension only if the results are mixed | **Validation** |
 
 **KEEP GOING only if all of these hold:**
 - ≥ 60% of eateries get nothing or ≤ ₹10/kg today;
@@ -134,3 +134,5 @@ To run it: `cd sirattai-kaasu && ADMIN_PIN=yourpin npm start`, then open `http:/
 - The current shell price per kg at your nearest buyers. **Get 2 written quotes** before the first pickup.
 - What eateries in your chosen town get today (the survey answers this).
 - The GST treatment of raw shells (0% under HSN 14049060 per two sources). Confirm it with a CA if your annual turnover will cross the registration limit.
+- **Scale stamping.** A scale used for buying and selling by weight normally needs Legal Metrology verification. Buy a **pre-verified, stamped** digital hanging scale from a licensed dealer, who usually handles the stamping, so you never need an office visit.
+- **Buyer legitimacy.** The market audit notes that some shell-burning units operate without permits. Prefer buyers with a GST number and pollution-board consent, and ask for a GST invoice or purchase bill with each lot.

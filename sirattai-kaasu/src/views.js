@@ -403,6 +403,7 @@ ${error ? `<p class="error">${esc(error)}</p>` : ''}
   ${field('Coconuts used per day', 'coconuts_per_day', '', { type: 'number', step: '1', attrs: 'min="0"' })}
   ${select('Where do the shells go now?', 'shells_go_to', outlets, '', { required: true })}
   ${field('If sold: price received (₹/kg)', 'current_price_per_kg', '', { type: 'number', step: '0.5', attrs: 'min="0"' })}
+  ${field('Price they expect (₹/kg) – ask BEFORE telling our rate', 'expected_price_per_kg', '', { type: 'number', step: '0.5', attrs: 'min="0"' })}
   <label class="check"><input type="checkbox" name="willing_to_sign" value="1"> Willing to sign up for weekly pickup</label>
   ${textarea('Notes', 'notes')}
   <button class="btn">Save survey</button>
@@ -415,15 +416,16 @@ ${error ? `<p class="error">${esc(error)}</p>` : ''}
     .join('')}
   <p>Willing to sign up: <b>${surveys.filter((s) => s.willing_to_sign).length}</b></p>
   <p>Coconuts per day (median): <b>${esc(median(surveys.map((s) => s.coconuts_per_day).filter((v) => v !== null && v !== undefined)) ?? '–')}</b></p>
+  <p>Price eateries expect (median ₹/kg): <b>${esc(median(surveys.map((s) => s.expected_price_per_kg).filter((v) => v !== null && v !== undefined)) ?? '–')}</b>. Compare it with the fair rate on the Rate page.</p>
 </div>
 </div>
 <h2>Responses</h2>
 <table>
-<thead><tr><th>Eatery</th><th>Area</th><th>Coconuts/day</th><th>Shells go to</th><th>₹/kg</th><th>Sign up?</th><th>Notes</th></tr></thead>
+<thead><tr><th>Eatery</th><th>Area</th><th>Coconuts/day</th><th>Shells go to</th><th>Gets ₹/kg</th><th>Expects ₹/kg</th><th>Sign up?</th><th>Notes</th></tr></thead>
 <tbody>${surveys
       .map(
         (s) => `<tr><td>${esc(s.eatery_name)}</td><td>${esc(s.area)}</td><td>${esc(s.coconuts_per_day ?? '')}</td><td>${esc(SHELL_OUTLETS[s.shells_go_to] || s.shells_go_to)}</td>
-      <td>${s.current_price_per_kg ?? ''}</td><td>${s.willing_to_sign ? 'Yes' : 'No'}</td><td>${esc(s.notes)}</td></tr>`,
+      <td>${esc(s.current_price_per_kg ?? '')}</td><td>${esc(s.expected_price_per_kg ?? '')}</td><td>${s.willing_to_sign ? 'Yes' : 'No'}</td><td>${esc(s.notes)}</td></tr>`,
       )
       .join('')}</tbody>
 </table>`,

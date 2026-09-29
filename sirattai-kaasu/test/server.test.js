@@ -124,11 +124,12 @@ test('full flow: eatery → weigh-in → receipt → buyer → lot → validatio
 
 test('survey feeds the validation scoreboard', async () => {
   for (let i = 0; i < 20; i++) {
-    const res = await post('/admin/survey', { eatery_name: `Shop ${i}`, shells_go_to: i < 14 ? 'bin' : 'sold', current_price_per_kg: i < 14 ? '' : 15, coconuts_per_day: 20, willing_to_sign: i % 2 ? 1 : '' });
+    const res = await post('/admin/survey', { eatery_name: `Shop ${i}`, shells_go_to: i < 14 ? 'bin' : 'sold', current_price_per_kg: i < 14 ? '' : 15, expected_price_per_kg: 16, coconuts_per_day: 20, willing_to_sign: i % 2 ? 1 : '' });
     assert.equal(res.status, 303);
   }
   const html = await (await get('/admin/survey')).text();
   assert.match(html, /70% of 20/);
+  assert.match(html, /Price eateries expect \(median ₹\/kg\): <b>16<\/b>/);
 });
 
 test('bad input gets a friendly 400, not a crash', async () => {

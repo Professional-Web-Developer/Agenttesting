@@ -357,6 +357,7 @@ export function createApp({ dbPath = ':memory:', adminPin, sessionSecret = rando
             coconuts_per_day: num(form, 'coconuts_per_day', { min: 0, max: 100000, label: 'Coconuts per day' }),
             shells_go_to: outlet,
             current_price_per_kg: outlet === 'sold' ? price : null,
+            expected_price_per_kg: num(form, 'expected_price_per_kg', { min: 0, max: 1000, label: 'Expected price' }),
             willing_to_sign: form.get('willing_to_sign') === '1',
             notes: text(form, 'notes', { max: 1000 }),
           });
