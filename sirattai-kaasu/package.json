@@ -1,0 +1,14 @@
+{
+  "name": "sirattai-kaasu",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Runs a coconut-shell collection business: weekly fair rate, weigh-in receipts, route sheets, lot profit and the 2-week validation scoreboard.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test \"test/**/*.test.js\""
+  }
+}
